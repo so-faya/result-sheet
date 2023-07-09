@@ -1,0 +1,374 @@
+body{
+    border: 1px solid red;
+    margin: 0;
+    padding: 70px 50px 50px 50px;
+}
+/* section one */
+.one-holder{
+    display: flex;
+    flex-basis: 80%;
+}
+.logo{
+    background-image: url(image.jpeg);
+    background-position: center;
+    flex-basis: 16%;
+    height: 150px;
+    margin-left: 50px;
+}
+.schoolid{
+    flex-basis: 70%;
+}
+.schoolid>.schoolname{
+    font-weight: lighter;
+    color: rgb(7, 7, 71);
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.schoolid>.schoollocate{
+    color: rgb(190, 9, 9);
+    font-weight: 600;
+    font-size: 23px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: -14px;
+}
+.schoollocate>.motto{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 9px;
+}
+/* section one end */
+
+/* section two */
+.twohd,.tablehd,.fourhd{
+    text-align: center;
+    font-family: sans-serif;
+    font-size:  18px;
+    font-weight: lighter;
+}
+.stud_id{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 0px 50px;
+
+}
+.stud_id1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 60%;
+
+}
+label,input{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+.stud_id1>.stud_Linfo,.stud_id2>.stud_Linfo{
+    flex-basis: 100%;
+}
+.stud_id1>.stud_Sinfo{
+    flex-basis: 40%;
+}
+.stud_Ssinfo{
+    flex-basis: 45%;
+}
+.stud_Ssinfo>input{
+    width: 40%;
+}
+.stud_id2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 35%;
+}
+
+.stud_id2>.stud_Linfo>input{
+    width: 30%;
+}
+.stud_id2>.stud_Llinfo>input{
+    width: 50%;
+}
+.short{
+    flex-basis: 49%;
+}
+.short>input{
+    width: 30%;
+}
+.stud_info>input{
+    margin-left: 25px;
+}
+/* section two end */
+
+/* section three  */
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+}
+th,td{
+    border: 1px solid black;
+    color: rgb(18, 18, 165);
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+td:first-child{
+    text-align: left;
+}
+td{
+    padding: 15px 15px;
+}
+tr:nth-child(even){
+    background-color: rgb(216, 216, 248);
+}
+tr:last-child, td{
+    background-color: transparent;
+    color: black;
+}
+tr:last-child>td:first-child, tr:last-child>td:nth-child(3){
+    text-align: right;
+    border: none;
+}
+/* section three ends */
+
+/* section four */
+.four{
+    margin: 30px 0px;
+}
+.fourholder{
+    display: flex;
+    justify-content: space-between;
+}
+.firstpart{
+    flex-basis: 30%;
+}
+.firstpart>table{
+    width: 100%;
+}
+.secondpart{
+    flex-basis: 60%;
+}
+.secondpart>table{
+    width: 100%;
+}
+/* section four ends */
+
+/* last section */
+
+.last1,.last2,.last3{
+    display: flex;
+    margin-bottom: 10px;
+}
+.comment{
+    flex-basis: 20%;
+}
+.write{
+    flex-basis: 70%;
+}
+
+/* last section ends */
+/* pc view */
+@media (min-width:1024px) and (max-width:1308px){
+    body{
+        padding: 70px 30px 50px 30px;
+    }
+    /* section one */
+    .one-holder{
+        flex-basis: 90%;
+    }
+    .logo{
+        height: 180px;
+        margin-left: 30px;
+    }
+    /* section one ends */
+
+    /* section two */
+    .stud_id{
+        padding: 0px;
+    
+    }
+    .stud_id1{
+        flex-basis: 60%;
+    }
+    input{
+        margin-left: 10px;
+    }
+    .stud_id2{
+        flex-basis: 40%;
+    }
+    .stud_info>input{
+        margin-left: 15px;
+    }       
+}
+/* tablet view */
+@media (min-width:768px) and (max-width:1024px){
+    body{
+        padding: 50px 25px 50px 25px;
+    }
+    /* section one */
+    .one-holder{
+        flex-basis: 90%;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .schoolid>.schoolname{
+        font-size: 22px;
+    }
+    .schoolid>.schoollocate{
+        font-size: 18px;
+    }
+    .schoollocate>.motto{
+        font-size: 16px;
+    }
+    /* section one ends */
+    /* section two */
+    .twohd,.tablehd,.fourhd{
+        font-size:  16px;
+    }
+    .stud_id{
+        padding: 0px;
+    
+    }
+    .stud_id1{
+        flex-basis: 60%;
+    
+    }
+    label,input{
+        font-size: 15px;
+    }
+    input{
+        margin-left: 6px;
+        width: 70%;
+    }
+    .stud_Ssinfo>input{
+        width: 30%;
+    }
+    .stud_id2{
+        flex-basis: 40%;
+    }
+    
+    .stud_id2>.stud_Linfo>input{
+        width: 25%;
+    }
+    .stud_id2>.stud_Llinfo>input{
+        width: 50%;
+    }
+    .short{
+        flex-basis: 49%;
+    }
+    .short>input{
+        width: 20%;
+    }
+    .stud_info>input{
+        margin-left: 0px;
+    }
+    /* section two end     */
+    
+    /* section three */
+    th{
+        transform: rotate(90deg);
+        padding: 35px 0px;
+        text-align: center;
+    }
+    /* section three ends */
+
+    /* section four */
+
+    .fourholder{
+        flex-direction: column;
+    }
+    .firstpart{
+        flex-basis: 30%;
+        margin-bottom: 30px;
+    }
+    .firstpart>table{
+        width: 40%;
+    }
+    .secondpart{
+        flex-basis: 60%;
+    }
+    .secondpart>table{
+        width: 50%;
+    }
+    th>p{
+        width: 40%;
+        transform: translate(90px,0px);
+    }
+}
+@media (min-width:425px) and (max-width:768px){
+    body{
+        margin: 0;
+        padding: 50px 20px 50px 20px;
+    }
+    /* section one */
+    .one-holder{
+        flex-basis: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo{
+        flex-basis: 70%;
+        margin-left: 0px;
+    }
+    .schoolid{
+        flex-basis: 100%;
+        margin-top: 30px;
+    }
+    /* section one end */
+
+    /* section two */
+    .twohd,.tablehd,.fourhd{
+        font-size:  18px;
+    }
+    .stud_id{
+        flex-direction: column;
+        padding: 0px;
+        border: 1px solid red;
+    
+    }
+    .stud_id1{
+        flex-basis: 60%;
+    
+    }
+    input{
+        margin-left: 10px;
+        width: 50%;
+    }
+    
+    .stud_Ssinfo{
+        flex-basis: 45%;
+    }
+    .stud_Ssinfo>input{
+        width: 10%;
+    }
+    .stud_id2{
+        flex-basis: 35%;
+    }
+    
+    .stud_id2>.stud_Linfo>input{
+        width: 30%;
+    }
+    .stud_id2>.stud_Llinfo>input{
+        width: 50%;
+    }
+    .short>input{
+        width: 20%;
+    }
+    .stud_info>input{
+        margin-left: 25px;
+    }
+    /* section two end */
+    /* section three */
+     
+    .threeholder>table{
+        width: 10%;
+
+    }
+}
